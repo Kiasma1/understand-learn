@@ -1,0 +1,15 @@
+{
+  "name": "understand-learn",
+  "description": "Interactive code tutor — guided, stateful teaching flow with predict-verify loop, exercises, and cross-session progress",
+  "version": "1.0.0",
+  "skills": [
+    {
+      "path": "skills/understand-learn/SKILL.md"
+    }
+  ],
+  "author": {
+    "name": "Egonex-AI"
+  },
+  "repository": "https://github.com/Egonex-AI/Understand-Anything",
+  "license": "MIT"
+}

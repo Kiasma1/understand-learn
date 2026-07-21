@@ -1,0 +1,34 @@
+{
+  "description": "Test prompts for dry_run verification of /understand-learn",
+  "prompts": [
+    {
+      "id": "overview-mode",
+      "input": "/understand-learn --mode overview",
+      "expectations": [
+        "Outputs project overview with exactly 9 sections",
+        "Reads layers[] from knowledge graph",
+        "Identifies entry points by tag",
+        "Updates phase to 'overview' via state script"
+      ]
+    },
+    {
+      "id": "feature-selection",
+      "input": "/understand-learn --goal \"understand authentication flow\"",
+      "expectations": [
+        "Searches knowledge graph for auth-related nodes",
+        "Traces calls/imports edges to build candidate path",
+        "Presents at most 3 feature candidates with entry point + estimated file count",
+        "STOPS and waits for user choice"
+      ]
+    },
+    {
+      "id": "continue-resume",
+      "input": "/understand-learn --continue",
+      "expectations": [
+        "Reads current.json via state script",
+        "Detects stored phase and resumes at correct position",
+        "If projectRoot mismatch, warns and does NOT continue"
+      ]
+    }
+  ]
+}
