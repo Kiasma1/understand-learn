@@ -1,6 +1,6 @@
 ---
 name: understand-learn
-description: Use when you want to interactively learn a codebase through a guided, stateful teaching flow — predicts, verifies, exercises, and resumes across sessions. NOT for: code generation, one-shot explanations (use /understand-chat), or learning non-code topics.
+description: "Use when you want to interactively learn a codebase through a guided, stateful teaching flow — predicts, verifies, exercises, and resumes across sessions. NOT for: code generation, one-shot explanations (use /understand-chat), or learning non-code topics."
 argument-hint: ["[--mode overview|feature|file <path>] [--goal <text>] [--continue|--status|--reset]"]
 ---
 
